@@ -9,7 +9,7 @@ function CurrencySelector({ currencies, fromCurrency, setFromCurrency, toCurrenc
             <div className='w-[40%]'>
                 <label className='block mb-2 text-sm font-semibold text-zinc-300'>From</label>
                 <Select value={fromCurrency} onValueChange={setFromCurrency} disabled={loading}>
-                    <SelectTrigger className='w-full bg-zinc-900 border-zinc-600 text-white rounded-xl p-3 hover:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all shadow-sm'>
+                    <SelectTrigger className='cursor-pointer w-full bg-zinc-900 border-zinc-600 text-white rounded-xl p-3 hover:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all shadow-sm'>
                         <SelectValue placeholder='Select currency' />
                     </SelectTrigger>
                     <SelectContent className='bg-zinc-900 border-zinc-700 text-white rounded-xl shadow-lg max-h-60'>
@@ -34,7 +34,7 @@ function CurrencySelector({ currencies, fromCurrency, setFromCurrency, toCurrenc
                         setFromCurrency(toCurrency);
                         setToCurrency(fromCurrency);
                     }}
-                    className='border-zinc-600 text-blue-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors rounded-xl'
+                    className='cursor-pointer border-zinc-600 text-blue-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-colors rounded-xl'
                     disabled={loading}
                 >
                     <IoSwapHorizontal className='h-5 w-5' />
@@ -44,7 +44,7 @@ function CurrencySelector({ currencies, fromCurrency, setFromCurrency, toCurrenc
             <div className='w-[40%]'>
                 <label className='block mb-2 text-sm font-semibold text-zinc-300'>To</label>
                 <Select value={toCurrency} onValueChange={setToCurrency} disabled={loading}>
-                    <SelectTrigger className='w-full bg-zinc-900 border-zinc-600 text-white rounded-xl p-3 hover:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all shadow-sm'>
+                    <SelectTrigger className='cursor-pointer w-full bg-zinc-900 border-zinc-600 text-white rounded-xl p-3 hover:border-blue-500 focus:ring-2 focus:ring-blue-500 transition-all shadow-sm'>
                         <SelectValue placeholder='Select currency' />
                     </SelectTrigger>
                     <SelectContent className='bg-zinc-900 border-zinc-700 text-white rounded-xl shadow-lg max-h-60'>
